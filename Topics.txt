@@ -1,0 +1,10 @@
+Bravery(勇敢)
+Honesty(诚实)
+Curiosity(求知)
+Kindness(善良)
+Justice(公正)
+Determination(毅力)
+Responsibility(责任感)
+Introvert(内敛)
+Gratitude(感恩)
+stubbornness（固执）
