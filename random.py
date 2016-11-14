@@ -24,11 +24,11 @@ def get_file(filename):
 #---------------make a window and show result-----------------------
 def showout(name_list):
     window=Tk() 
-    window.title("Topic matching result:")  
+    window.title("Topic matching result:")  #start a window & Tk was imported by line8
     frame = Frame(window, relief=RIDGE, borderwidth=0)  
-    frame.pack(fill=BOTH, expand=0)   
+    frame.pack(fill=BOTH, expand=0)         #define a frame which laied on window
     result = Listbox(window,font="Monotype\ Corsiva -30 bold")
-    result.insert(0,'  ')
+    result.insert(0,'  ')                   #get a list box to show out result in line
     for eachname in name_list:    
         result.insert(1, '            '+eachname + "'s     topic    is     "+ topic_list.pop(0))
     result.pack(fill=BOTH, expand=30)    
@@ -37,8 +37,8 @@ def showout(name_list):
     window.deiconify()  
     window.mainloop()    
 
-topic_list=get_file('Topics.txt')  #get datas
+topic_list=get_file('Topics.txt')          #get datas
 name_list=get_file('Members.txt')
-random.shuffle(name_list)          #made it out of order
+random.shuffle(name_list)                  #made them out of order
 random.shuffle(topic_list)
-showout(name_list)                 #show out result
+showout(name_list)                         #show out result
